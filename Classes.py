@@ -30,6 +30,22 @@ class Semester:
 		pass
 
 class Student:
-	# TheStudentclassstorestheinformationofastudent(e.g.,name,studentid,D.O.B,etc),programcode(which program he/she is currently at), the academichistory, current enrollments, and a study plan.Assumeastudentcanonlyhaveoneactiveprogram.Theacademichistorystoresalistofcoursesthatastudenthasattemptedbefore,aswellhis/hermarkandgradeoftheattemptedcourse.Currentenrollmentisalistofexistingofferings(coursecode,semester,year)thathe/sheiscurrentlyenrolledin,andastudyplanisalistoftuples(coursecode,semester,year)indicatingthefutureplanforcompletingtheremainingstudiestowardsgraduation(i.e.,thestudyplanexcludesthecoursesthatthestudenthasalreadypassed,andcourses that he is currently enrolled in.).TheStudentclassshouldprovideconstructor,stringmethods,getterandsetters,aswellasmethodstoamend the academic history and study plan.Note:-Oncetheofficialmarksofthecurrentenrollmentsarereleased,theyshouldbemovedtohis/heracademic history.-You might also want to include a status of the studyplan. For instance:-Ifastudentfailedacourse,thestatusofthestudyplanshouldindicatethatitneedstobeadjusted to reflect the updated plan on remainingstudies.Page2of9- Similarly,ifastudentenrolinorunenrollfromacourseoffering,thisstatusshouldalsobeupdated to reflect adjustment is needed on the studyplan.-Whenanewstudyplanisgenerated,thestatusofthestudyplanshouldindicatethatthestudy plan is up-to-date.
+	# The Student class stores the information of a student 
+	# (e.g., name, student id, D.O.B, etc), 
+	# program code (which program he/she is currently at), 
+	# the academic history, current enrollments, and a study plan. 
+	# Assume a student can only have one active program. 
+	# The academic history stores a list of courses that a student has attempted before, as well his/her mark and grade of the attempted course. 
+	# Current enrollment is a list of existing offerings 
+	# (course code, semester, year) that he/she is currently enrolled in, and a study plan is a list of tuples 
+	# (course code, semester, year) indicating the future plan for completing the remaining studies towards graduation
+	# (i.e.,the study plan excludes the courses that the student has already passed, and courses that he is currently enrolled in.).
+	# The Student class should provide constructor, string methods, getter ands etters, as well as methods to amend the academic history and study plan.
+	# - Once the official marks of the current enrollments are released, they should be moved to his/her academic history.
+	# - You might also want to include a status of the study plan. 
+	# For instance:
+	# - If a student failed a course, the status of the study plan should indicate that it needs to be adjusted to reflect the updated plan on remainingstudies.
+	# - Similarly,if a student enrol in or unenroll from a course offering, this status should also be updated to reflect adjustment is needed on the studyplan.
+	# - When a new study plan is generated, the status of the study plan should indicate that the study plan is up-to-date.
 	def __init__():
 		pass
