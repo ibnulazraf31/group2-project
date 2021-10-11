@@ -8,7 +8,7 @@ class Course:
 	def __init__():
 		pass
 
-class Program:
+class Program: 
 	# This is the class of an academic program, like the Bachelor of Computer Science (BP094) and Bachelor of Software Engineering (BP096). 
 	# Each program consists of program code, credit points 
 	# (e.g.,BP094 requires completion of 288 credit points upon graduation),
