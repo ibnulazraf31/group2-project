@@ -18,6 +18,14 @@ class Program:
 	def __init__():
 		pass
 
+
+class CourseOffering():
+	""" This class is to be used for the Semester class """
+	def __init__(self, course_name, max_students):
+		self.name = course_name
+		self.cap = max_students
+		self.enrolled_students = []
+
 class Semester:
 	# The Semester class contains its identity, e.g., S22021, and a list of course offerings in the semester.
 	# For each course offering, it also contains the maximum student number 
@@ -26,8 +34,27 @@ class Semester:
 	# (i.e., the list of currently enrolled students). 
 	# The Semester class should provide constructor, string methods, getter and setters, as well as methods to add or remove a student from a course offering. 
 	# When adding a student into an offering, the system should first check whether the cap has been reached, in which case,the student cannot enrol.
-	def __init__():
-		pass
+
+	def __init__(self, identity):
+		self.identity = identity #e.g., S22021
+		self.course_offerings = []
+	
+	def add_course_offering(self, name, cap):
+		self.course_offerings.append(CourseOffering(name, cap))
+
+	def add_student(self, course, student):
+		if len(course.enrolled_students) < course.cap:
+			course.enrolled_students.append(student)
+		else:
+			print("Can't add, cap reached.")
+
+	def remove_student(self, course, student):
+		course.enrolled_students.remove(student)
+
+	def __str__(self):
+		print(self.identity)
+		for course in self.course_offerings:
+			print(course.name)
 
 class Student:
 	# The Student class stores the information of a student 
